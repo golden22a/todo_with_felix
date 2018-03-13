@@ -1,0 +1,56 @@
+
+.container{
+  width:80%;
+  margin:0 auto;
+}
+.col-12{
+  width:100%;
+  margin:0;
+}
+
+.col-10{
+  width:70%;
+  margin:0;
+  display: inline-block;
+
+}
+.col-2{
+  width:30%;
+  margin:0;
+  display: inline-block;
+
+}
+.bt{
+  width:5em;
+  height:2em;
+  border:1px solid;
+  margin: 0 0.5em;
+
+}
+.bt-orange{
+  border-color:orange;
+  color:orange;
+}
+.bt-blue{
+  border-color:blue;
+  color:blue;
+}
+.bt-red{
+  border-color:red;
+  color:red;
+}
+form input{
+  width:100%;
+  height:3em;
+  border:1 px blue;
+  margin: 1em;
+  font-size: 1.2em;
+
+}
+form + button{
+  margin: 1em auto;
+}
+#add input{
+  width: 20%;
+  height:1.4em;
+}
