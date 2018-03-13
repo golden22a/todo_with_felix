@@ -54,12 +54,12 @@ function todoOne(id){
     url:`http://super-crud.herokuapp.com/api/todos/${id}`,
     method:'get',
     success:function(json){
-      content.hide(1000,function(){
+      content.hide(function(){
         content.empty();
 
 
       content.append(displayOneTodo(json));
-      content.show(100);});
+      content.show();});
     }
 
   });
@@ -75,12 +75,12 @@ function init(){
     method:'get',
     success:function(json){
       todos=json.todos;
-      content.hide(1000,function(){
+      content.hide(function(){
         content.empty();
 
 
       content.append(json.todos.sort(sortByPriority).map(displayTodo));
-      content.show(100);
+      content.show();
     });
   },
 
@@ -92,7 +92,7 @@ function editOne(id){
   console.log(todos);
   var i=todos.map(el => el._id).indexOf(id);
   console.log(i);
-  content.hide(1000,function(){
+  content.hide(function(){
     content.empty();
   content.append(`
     <div class='col-10'>
@@ -106,7 +106,7 @@ function editOne(id){
     <button class='bt bt-grey back' >Back</button>
     </div>
     `);
-  content.show(100);
+  content.show();
 });
   }
   function editTodo(data,id){
